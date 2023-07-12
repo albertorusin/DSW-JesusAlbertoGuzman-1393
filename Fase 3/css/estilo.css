@@ -1,0 +1,39 @@
+
+body {
+    display: grid; 
+    grid-template-areas: 
+    "A A A A"
+    "B B B B"
+    "D C C C"
+    "E E E E"; 
+    
+}
+.centradito {
+    text-align: center;
+}
+
+header {
+    grid-area: A;
+    background-color: #E8AA42; 
+    color: #025464;
+}
+nav {
+    grid-area: B;
+    background-color: #E57C23;
+}
+
+main {
+    grid-area: C;
+    background-color: #F8F1F1;
+}
+
+aside {
+    grid-area: D;
+    background-color: #025464;
+}
+
+footer {
+    grid-area: E;
+    background-color: #E57C23;
+}
+
