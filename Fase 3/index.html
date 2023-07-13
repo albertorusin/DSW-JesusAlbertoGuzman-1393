@@ -6,69 +6,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .centradito {
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+        .menú-horizontal {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menú-horizontal li {
+            margin: 0 10px;
+        }
+
+        .menú-horizontal li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .mockup-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .mockup-container img {
+            width: 50%;
+            height: auto;
+        }
+
+        aside {
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .menu-aside {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu-aside li {
+            margin-bottom: 10px;
+        }
+
+        .menu-aside li a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <h1 class="centradito">Selectores CSS</h1>
     </header>
-    <nav><br>
+
+    <nav>
         <ul class="menú-horizontal">
-            <li><a href="index.html"> Inicio </a></li>
-            <li><a href="audio.html"> Audio </a></li>
-            <li><a href="tema.html"> Tema </a></li>
-        </ul><br>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="audio.html">Audio</a></li>
+            <li><a href="tema.html">Tema</a></li>
+        </ul>
     </nav>
+
     <main>
         <h2 id="inicio">Inicio</h2>
         <p>Los selectores CSS son parte esencial del lenguaje de estilos en cascada (CSS, por sus siglas en inglés),
-            utilizado para aplicar estilos y formatos a elementos HTML en una página web.
-            <br>Los selectores permiten seleccionar y apuntar a elementos específicos o grupos de elementos para
-            aplicarles estilos de manera selectiva.
-        </p>
+            utilizado para aplicar estilos y formatos a elementos HTML en una página web. Los selectores permiten
+            seleccionar y apuntar a elementos específicos o grupos de elementos para aplicarles estilos de manera
+            selectiva.</p>
 
         <h2 id="tema">Conceptos</h2>
-        <p>Selectores de elemento: Los selectores de elemento son los más básicos y seleccionan elementos HTML en
-            función de su nombre de etiqueta. Por ejemplo, el selector p selecciona todos los elementos de párrafo en el
-            documento.
-            <br>Selectores de clase: Los selectores de clase se utilizan para seleccionar elementos que tienen un
+        <p>Selectores de elemento: Los selectores de elemento son los más básicos y seleccionan elementos HTML en función
+            de su nombre de etiqueta. Por ejemplo, el selector p selecciona todos los elementos de párrafo en el
+            documento. Selectores de clase: Los selectores de clase se utilizan para seleccionar elementos que tienen un
             atributo de clase específico. Se definen usando un punto seguido del nombre de la clase. Por ejemplo, el
-            selector .destacado selecciona todos los elementos con la clase "destacado".
-            <br>Selectores de ID: Los selectores de ID seleccionan elementos que tienen un atributo de ID único. Se
-            definen usando el símbolo de almohadilla seguido del nombre del ID. Por ejemplo, el selector #logo
-            selecciona el elemento con el ID "logo".
-            <br>Selectores de atributo: Los selectores de atributo seleccionan elementos en función de los valores de
-            sus atributos. Pueden seleccionar elementos por atributos específicos, valores de atributos exactos o
+            selector .destacado selecciona todos los elementos con la clase "destacado". Selectores de ID: Los
+            selectores de ID seleccionan elementos que tienen un atributo de ID único. Se definen usando el símbolo de
+            almohadilla seguido del nombre del ID. Por ejemplo, el selector #logo selecciona el elemento con el ID
+            "logo". Selectores de atributo: Los selectores de atributo seleccionan elementos en función de los valores
+            de sus atributos. Pueden seleccionar elementos por atributos específicos, valores de atributos exactos o
             valores que contengan cierta cadena. Por ejemplo, el selector [type="email"] selecciona todos los elementos
-            con el atributo "type" establecido en "email".
-            <br>Selectores descendientes: Los selectores descendientes se utilizan para seleccionar elementos que son
-            descendientes directos o indirectos de otro elemento. Se especifican mediante un espacio entre los
-            selectores. Por ejemplo, el selector ul li selecciona todos los elementos de lista que son descendientes de
-            un elemento de lista no ordenada.
-
-            <br>Selectores de combinación: Los selectores de combinación permiten seleccionar elementos que cumplen
-            ciertas condiciones o relaciones. Algunos ejemplos comunes son:
-            <br>Selector de hijo (>): selecciona elementos que son hijos directos de otro elemento.
-            <br>Selector de adyacente (+): selecciona el siguiente elemento adyacente después de otro elemento.
-            <br>Selector de hermano general (~): selecciona todos los elementos hermanos después de otro elemento.
-        </p>
+            con el atributo "type" establecido en "email". Selectores descendientes: Los selectores descendientes se
+            utilizan para seleccionar elementos que son descendientes directos o indirectos de otro elemento. Se
+            especifican mediante un espacio entre los selectores. Por ejemplo, el selector ul li selecciona todos los
+            elementos de lista que son descendientes de un elemento de lista no ordenada. Selectores de combinación: Los
+            selectores de combinación permiten seleccionar elementos que cumplen ciertas condiciones o relaciones.
+            Algunos ejemplos comunes son: Selector de hijo (>): selecciona elementos que son hijos directos de otro
+            elemento. Selector de adyacente (+): selecciona el siguiente elemento adyacente después de otro elemento.
+            Selector de hermano general (~): selecciona todos los elementos hermanos después de otro elemento.</p>
 
         <h2 id="mockup">Mockup</h2>
-        <div style="display: flex; justify-content: center; align-items: center;">
-            <img src="https://github.com/albertorusin/DSW-JesusAlbertoGuzman-1393/blob/main/Fase%203/Frame%201.png?raw=true" alt="Frame1" style="width: 50%; height: auto;">
-          </div>
-          <div style="display: flex; justify-content: center; align-items: center;">
-            <img src="https://github.com/albertorusin/DSW-JesusAlbertoGuzman-1393/blob/main/Fase%203/Frame%202.png?raw=true" alt="Frame2" style="width: 50%; height: auto;">
-          </div>
+        <div class="mockup-container">
+            <img src="https://github.com/albertorusin/DSW-JesusAlbertoGuzman-1393/blob/main/Fase%203/Frame%201.png?raw=true"
+                alt="Frame1">
+        </div>
+        <div class="mockup-container">
+            <img src="https://github.com/albertorusin/DSW-JesusAlbertoGuzman-1393/blob/main/Fase%203/Frame%202.png?raw=true"
+                alt="Frame2">
+        </div>
     </main>
+
     <aside>
         <ul class="menu-aside">
-            <li class="centradito"><a href="index.html"> Inicio </a></li>
-            <li><a href="audio.html"> Audio del Tema </a></li>
-            <li class="centradito"><a href="tema.html"> Tema </a> </li>
+            <li class="centradito"><a href="index.html">Inicio</a></li>
+            <li><a href="audio.html">Audio del Tema</a></li>
+            <li class="centradito"><a href="tema.html">Tema</a></li>
         </ul>
     </aside>
-    <footer> <br><br>Pie de página<br><br></footer>
+
+    <footer>
+        Pie de página
+    </footer>
 </body>
 
 </html>
