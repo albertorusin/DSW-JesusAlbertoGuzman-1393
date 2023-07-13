@@ -20,7 +20,7 @@ header {
 
 nav {
     grid-area: B;
-    background-color: #E57C23;
+    background-color: #025464;
 }
 
 main {
@@ -35,7 +35,8 @@ aside {
 
 footer {
     grid-area: E;
-    background-color: #E57C23;
+    background-color: #025464;
+    color: #E57C23;
 }
 
 .menú-horizontal {
@@ -46,8 +47,8 @@ footer {
 }
 
 .menú-horizontal a{
-    background-color: #025464;
-    color: #E8AA42;
+    background-color: #E57C23;
+    color: #025464;
     text-decoration: none;
     padding: 10px 40px;
     margin: 4px;
