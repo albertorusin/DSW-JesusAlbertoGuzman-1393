@@ -23,8 +23,16 @@
         <section>
             <div class="centrado">
                 <audio controls>
-                    <source src="grabacion.m4a" type="audio/ogg">
+                    <source src="audios/grabacion.m4a" type="audio/ogg">
                     Your browser does not support the audio element.
+                    <audio id="mireproductor" src="mi-archivo-de-audio.mp3"></audio>
+                    <div>
+                        <button onclick="document.getElementById('player').play()">Play</button>
+                        <button onclick="document.getElementById('player').pause()">Pausa</button>
+                        <button onclick="document.getElementById('player').load()">Stop</button>
+                        <button onclick="document.getElementById('player').volume += .1">Subir volumen</button>
+                        <button onclick="document.getElementById('player').volume -= .1">Bajar volumen</button>
+                    </div>
                 </audio>
             </div>
         </section>
