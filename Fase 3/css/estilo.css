@@ -12,6 +12,10 @@ body {
     text-align: center;
 }
 
+.justificadito {
+    text-align: justify;
+}
+
 header {
     grid-area: A;
     background-color: #E8AA42;
@@ -26,6 +30,8 @@ nav {
 main {
     grid-area: C;
     background-color: #F8F1F1;
+    padding: 10px 40px;
+    margin: 4px;
 }
 
 aside {
