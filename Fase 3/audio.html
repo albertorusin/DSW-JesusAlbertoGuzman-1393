@@ -19,16 +19,12 @@
             <li><a href="audio.html"> Audio </a></li>
         </ul><br>
     </nav>
-    <main> <audio src="audios/grabacion.m4a"></audio>
-        <audio id="mireproductor" src="mi-archivo-de-audio.mp3"></audio>
-<div>
-    <button onclick="document.getElementById('player').play()">Play</button>
-    <button onclick="document.getElementById('player').pause()">Pausa</button>
-    <button onclick="document.getElementById('player').load()">Stop</button>
-    <button onclick="document.getElementById('player').volume += .1">Subir volumen</button>
-    <button onclick="document.getElementById('player').volume -= .1">Bajar volumen</button>
-</div> 
-            
+    <main>
+        <audio controls>
+            <source
+                src="https://github.com/albertorusin/DSW-JesusAlbertoGuzman-1393/blob/main/Fase%203/Audios/Grabaci%C3%B3n.m4a"
+                type="audio/ogg">
+            </audio>
     </main>
     <aside>
         <ul class="menu-aside">
@@ -37,7 +33,8 @@
             <li class="centradito"><a href="audio.html"> Audio </a> </li>
         </ul>
     </aside>
-    <footer class="centradito"> <br><br>&copy; 2023 - Tecnología en Producción de Audio - Jesus Alberto Guzman <br><br>
+    <footer class="centradito"> <br><br>&copy; 2023 - Tecnología en Producción de Audio - Jesus Alberto Guzman
+        <br><br>
     </footer>
 </body>
 
