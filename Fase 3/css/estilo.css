@@ -1,22 +1,23 @@
-
 body {
-    display: grid; 
-    grid-template-areas: 
-    "A A A A"
-    "B B B B"
-    "D C C C"
-    "E E E E"; 
-    
+    display: grid;
+    grid-template-areas:
+        "A A A A"
+        "B B B B"
+        "D C C C"
+        "E E E E";
+
 }
+
 .centradito {
     text-align: center;
 }
 
 header {
     grid-area: A;
-    background-color: #E8AA42; 
+    background-color: #E8AA42;
     color: #025464;
 }
+
 nav {
     grid-area: B;
     background-color: #E57C23;
@@ -35,5 +36,36 @@ aside {
 footer {
     grid-area: E;
     background-color: #E57C23;
+}
+
+.menú-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+.menú-horizontal a{
+    background-color: #025464;
+    color: #E8AA42;
+    text-decoration: none;
+    padding: 10px 40px;
+    margin: 4px;
+
+
+}
+
+.menu-aside {
+    list-style: none;
+    
+}
+
+.menu-aside a{
+    text-decoration: none;
+    padding: 10px 40px;
+    margin:4px;
+    background-color: #E57C23;
+    color: #025464;
+    display: block;
 }
 
