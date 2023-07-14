@@ -9,6 +9,7 @@
   .team-member {
     text-align: center;
     margin-bottom: 20px;
+    color: #E57C23;
   }
   
   .team-member img {
@@ -20,8 +21,8 @@
   /* Otros estilos personalizados... */
 
   footer {
-    grid-area: E;
     background-color: #025464;
     color: #E57C23;
+    }
   
   
