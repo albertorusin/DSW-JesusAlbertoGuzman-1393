@@ -18,4 +18,10 @@
   }
   
   /* Otros estilos personalizados... */
+
+  footer {
+    grid-area: E;
+    background-color: #025464;
+    color: #E57C23;
+  
   
