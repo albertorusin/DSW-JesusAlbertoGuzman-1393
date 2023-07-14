@@ -20,18 +20,35 @@
         </ul><br>
     </nav>
     <main>
-        <div class="centrado">
+        <section> 
+            <h2>Audio</h2>
+            <p>
 
-            <audio id="player" src="audios/grabacion.m4a" controls></audio>
-            <div>
-                <button onclick="document.getElementById('player').play()">Play</button>
-                <button onclick="document.getElementById('player').pause()">Pausa</button>
-                <button onclick="document.getElementById('player').load()">Stop</button>
-                <button onclick="document.getElementById('player').volume += .1">Subir volumen</button>
-                <button onclick="document.getElementById('player').volume -= .1">Bajar volumen</button>
+                Este es el audio del tema
+
+            </p>
+
+            <div class="centrado">
+
+                <audio id="player" src="audios/Selectores CSS.mp4" controls></audio>
+                <div>
+                    <button onclick="document.getElementById('player').play()">Play</button>
+                    <button onclick="document.getElementById('player').pause()">Pausa</button>
+                    <button onclick="document.getElementById('player').load()">Stop</button>
+                    <button onclick="document.getElementById('player').volume += .1">Subir volumen</button>
+                    <button onclick="document.getElementById('player').volume -= .1">Bajar volumen</button>
+                </div>
+                
+                <div>
+                    <av-circle :outline-width="0" :progress-width="5" :outline-meter-space="5" :playtime="true"
+                        playtime-font="18px Monaco" audio-src="audios/grabacion.m4a"></av-circle>
+                </div>
+
+                </audio>
             </div>
-            </audio>
-        </div>
+
+        </section>
+
     </main>
     <aside>
         <ul class="menu-aside">
