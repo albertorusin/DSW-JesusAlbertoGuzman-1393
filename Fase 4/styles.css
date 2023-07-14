@@ -1,0 +1,21 @@
+/* Estilos generales */
+
+.container {
+    margin-top: 20px;
+  }
+  
+  /* Estilos específicos para el equipo */
+  
+  .team-member {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  /* Otros estilos personalizados... */
+  
