@@ -20,7 +20,7 @@
         </ul><br>
     </nav>
     <main>
-        <section> 
+        <section>
             <h2>Audio</h2>
             <p>
 
@@ -38,10 +38,9 @@
                     <button onclick="document.getElementById('player').volume += .1">Subir volumen</button>
                     <button onclick="document.getElementById('player').volume -= .1">Bajar volumen</button>
                 </div>
-                
+
                 <div>
-                    <av-circle :outline-width="0" :progress-width="5" :outline-meter-space="5" :playtime="true"
-                        playtime-font="18px Monaco" audio-src="audios/grabacion.m4a"></av-circle>
+                    <av-line :line-width="2" line-color="lime" audio-src="/static/music.mp3"></av-line>
                 </div>
 
                 </audio>
