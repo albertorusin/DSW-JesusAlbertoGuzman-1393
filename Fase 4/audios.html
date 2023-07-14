@@ -55,9 +55,16 @@
         <h1>Audios</h1>
         <!-- Contenido de la página de audios -->
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-5">
               <div class="team-member">
-                <audio id="player" src="Audios/grabacion.m4a" controls></audio>
+                <audio id="player" src="Audios/grabacion.m4a"></audio>
+                <div>
+                    <button onclick="document.getElementById('player').play()">Play</button>
+                    <button onclick="document.getElementById('player').pause()">Pausa</button>
+                    <button onclick="document.getElementById('player').load()">Stop</button>
+                    <button onclick="document.getElementById('player').volume += .1">Subir volumen</button>
+                    <button onclick="document.getElementById('player').volume -= .1">Bajar volumen</button>
+                </div>
                 <img src="ruta-de-la-imagen.jpg" alt="Miembro 1">
                 <h3>Nombre Miembro 1</h3>
                 <p>Correo Electrónico</p>
@@ -77,6 +84,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <footer class="centradito"> <br><br> &copy; 2023 - Tecnología en Producción de Audio - Jesús Alberto Guzmán <br><br>
+    </footer>
 </body>
 
 </html>
