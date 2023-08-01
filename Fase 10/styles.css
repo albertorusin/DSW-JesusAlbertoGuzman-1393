@@ -2,7 +2,6 @@
 
 .container {
     margin-top: 20px;
-    color: #E57C23;
     
   }
   
@@ -11,7 +10,6 @@
   .team-member {
     text-align: center;
     margin-bottom: 20px;
-    color: #E57C23;
     
   }
   
@@ -19,7 +17,6 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    color: #E57C23;
     
   }
   
@@ -29,8 +26,6 @@
     background-color: #025464; /* Cambia #ffcc00 al color que desees */
   } 
 
-  .custom-navbar-text {
-    color: #E57C23; /* Cambia #ffcc00 al color que desees */
-  }
+  
   
   
